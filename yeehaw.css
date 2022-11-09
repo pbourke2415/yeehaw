@@ -1,0 +1,39 @@
+body {
+	background: lightblue;
+	display: grid;
+	grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+	
+}
+
+.yeehaw {
+	--myColor: blue;
+	--blur: 3px;
+	line-height: 100%;
+	height: 100%;
+	width: 100%;
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: min(20vw, 20vh);
+    font-weight: 700;
+    color: pink;
+    text-shadow: 
+		-1px 3px var(--blur) var(--myColor),
+        -2px -2px var(--blur) var(--myColor),
+        -3px -3px var(--blur) var(--myColor),
+        -4px -4px var(--blur) var(--myColor),
+        -5px -5px var(--blur) var(--myColor),
+        -6px -6px var(--blur) var(--myColor),
+        -7px -7px var(--blur) var(--myColor),
+        -8px -8px var(--blur) var(--myColor),
+        -9px -9px var(--blur) var(--myColor),
+        -10px -10px var(--blur) var(--myColor),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+.kapow {
+	height: 60vh;
+	width: 60vw;
+	background: transparent;
+	grid-area: 2/2/2/2;
+	overflow: clip;
+	border: none !important;
+}
